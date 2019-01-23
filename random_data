@@ -1,0 +1,81 @@
+{
+    "college": {
+        "name": "tipdvhiyrxxw",
+        "total_division": 8,
+        "college_hours": [
+            5,
+            17
+        ],
+        "num_days": 5,
+        "num_weeks": 16
+    },
+    "subjects": [
+        {
+            "name": "rflrxi",
+            "hours": 64
+        },
+        {
+            "name": "xzfxmj",
+            "hours": 40
+        },
+        {
+            "name": "sjccep",
+            "hours": 60
+        },
+        {
+            "name": "mpprnm",
+            "hours": 38
+        },
+        {
+            "name": "aqdknj",
+            "hours": 63
+        }
+    ],
+    "teachers": [
+        {
+            "name": "tmhihwzlua",
+            "timings": [
+                6,
+                14
+            ],
+            "max_hours": 16,
+            "subject": "srlbte"
+        },
+        {
+            "name": "nvdzjwyamy",
+            "timings": [
+                6,
+                16
+            ],
+            "max_hours": 25,
+            "subject": "pnufhh"
+        },
+        {
+            "name": "ngtxtvldse",
+            "timings": [
+                10,
+                12
+            ],
+            "max_hours": 34,
+            "subject": "upsdhe"
+        },
+        {
+            "name": "glyryufcxo",
+            "timings": [
+                9,
+                17
+            ],
+            "max_hours": 12,
+            "subject": "iunkml"
+        },
+        {
+            "name": "eeufljqgvs",
+            "timings": [
+                8,
+                13
+            ],
+            "max_hours": 36,
+            "subject": "sdgxda"
+        }
+    ]
+}
