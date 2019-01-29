@@ -22,7 +22,31 @@ const handleClick = () => {
     }
 }
 
+const handleSwipe = () => {
+    let xFirst = null; 
+    document.addEventListener('touchstart', e => {
+        const firstTouchEvent = event.touches[0];
+        xFirst = firstTouchEvent.clientX;
+    }, false);
+
+    document.addEventListener('touchmove', e => {
+        if (!xFirst)
+            return;
+        
+        let xLast = event.touches[0].clientX;
+        let dx = xFirst - xLast;
+
+        if (xFirst <= 40 && dx < 0)
+            handleClick();
+        else if (dx > 0 && drawerOpen)
+            handleClick();
+        xFirst = null;
+        return;
+    }, false);
+}
+
 document.addEventListener("DOMContentLoaded", e => {
+    handleSwipe();
     const loader = document.querySelector('.loader');
     setTimeout(() => {
         loader.style.opacity = 0;
