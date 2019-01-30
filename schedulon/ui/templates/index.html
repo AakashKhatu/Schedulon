@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ScheduleOn</title>
+	<meta name="theme-color" content="#e5314e">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/fonts.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
+	<script type="text/javascript" src="script/main.js"></script>
+</head>
+<body>
+    <header>
+		<img class="top-symbol" src="img/top.png"/>
+		<aside class="sidenav mobile">
+			<div class="sidenav-backdrop" onclick="handleClick()"></div>
+			<div class="drawer">
+				<ul class="mobile">
+					<li><i class="fas fa-home"></i>Home</li>
+					<div class="divider"></div>
+					<li><i class="fas fa-info-circle"></i>About Us</li>
+					<div class="divider"></div>
+					<li><i class="fas fa-question"></i>FAQs</li>
+					<div class="divider"></div>
+				</ul>
+			</div>
+		</aside>
+		<div class="loader">
+			<img src="img/loader.svg" />
+		</div>
+		<div class="container">
+			<nav>
+				<div class="hamburger mobile" onclick="handleClick()">
+                    <div class="one" ></div>
+                    <div class="two" ></div>
+                    <div class="three" ></div>
+                </div>
+				<h1 class="navbar-brand">ScheduleOn</h1>
+				<ul class="desktop">
+					<li>Home</li>
+					<li>About Us</li>
+					<li>Support</li>
+					<button class="button is-light">LOGIN</button>
+					<button class="button is-primary">SIGN UP</button>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<div class="hero">
+			<div class="content">
+				<h1 class="title">Time tables and Schedules for all your needs.</h1>
+				<p class="subtitle">ScheduleOn is optimized for both Schools and Colleges, and provides you all features that you need to manage your time tables and schedules. </p>
+				<button class="button is-primary is-long">Try ScheduleOn for free.</button>
+			</div>
+			<img src="img/undraw_teaching_f1cm.svg" />
+		</div>
+	</div>
+    <!-- <img class="middle-symbol" src="img/middle.png"/>
+    <img class="backdrop-symbol" src="img/backdrop.png"/> -->
+</body>
+</html>

@@ -1,0 +1,320 @@
+/* #e5314e */
+@import url('https://fonts.googleapis.com/css?family=Sarabun:400,800');
+
+*, .button {
+    font-family: 'Product Sans', sans-serif;
+}
+
+html, body {
+    /* padding: 40px 278px; */
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1386px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #e2e2e2;
+    margin: 10px 0;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    width: 100vw;
+    background: #e5314e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 200px;
+}
+
+header {
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .desktop li {
+    display: inline;
+    transition: all 0.2s ease-in;
+    padding: 10px 10px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+header .desktop li:hover {
+    background-color: #e5314f96;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburger {
+    margin: 20px 10px;
+    position: relative;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.one,
+.two,
+.three {
+    opacity: 1;
+    width: 35px;
+    margin: 2px 0;
+    height: 5px;
+    background: #e5314e;
+    transition: all 0.5s ease-in-out;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -210px;
+    z-index: 2;
+    color: #000;
+    height: 100%; 
+    background: #fff;
+    overflow-x: hidden;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 0 9px #0000007a;
+}
+
+.sidenav-backdrop {
+    position: fixed;
+    top: 0;
+    display: none;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    transition: opacity 525ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.sidenav ul {
+    display: inline;
+}
+
+.sidenav li {
+    list-style: none;
+    font-weight: 400;
+    margin: 20px 30px;
+}
+
+.sidenav i {
+    margin: 0 10px;
+    color: #e5314e;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .title {
+    width: 769px;
+    padding: 20px 0px;
+    font-size: 65px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero .subtitle {
+    width: 500px;
+    margin: 0;
+}
+
+
+.hero img {
+    height: 450px;
+    margin: 20px;
+}
+
+.top-symbol {
+    position: absolute;
+    top: -129px; 
+    left: -179px;
+    z-index: -10;
+    height: 300px;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+    color: #e5314e;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 17px;
+    width: 100px;
+    margin: 0 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-out;
+}
+
+.button:hover {
+    background-color: inherit;
+}
+
+.button.is-primary {
+    border-radius: 50px;
+    height: 59px;
+    width: 122px;
+    font-weight: 800;
+    background: #e5314e;
+    color: #fff;
+    box-shadow: 0 3px 6px #e5314e80;
+}
+
+.button.is-light {
+    border-radius: 50px;
+    height: 59px;
+    width: 122px;
+    background: #fff;
+    color: #e5314e;
+    font-weight: 800;
+    box-shadow: 0 3px 6px #00000030;
+}
+
+.button.is-primary:hover{
+    background: #e5314e;
+    box-shadow: 0 7px 14px #e5314e80;
+}
+
+.button.is-light:hover {
+    background: #fff;
+    color: #e5314e;
+    box-shadow: 0 7px 14px #00000030;
+}
+
+.button.is-long {
+    width: 264px;
+    margin: 20px 0;
+}
+
+.card-section {
+    height: 100vh;
+}
+
+.backdrop-symbol {
+    position: absolute;
+    left: 997.42px;
+    top: 1288.68px;
+}
+
+.middle-symbol {
+    position: absolute;
+    left: 38.4px;
+    top: 790.19px;
+}
+
+
+.mobile {
+    display: none;
+}
+
+/* Responsive media queries */
+
+@media  (max-width: 1200px) {
+    
+    .mobile {
+        display: inline;
+    }
+
+    header nav {
+        justify-content: initial;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .hero {
+        height: 85vh;
+    }
+
+    .hero .content {
+        text-align: center;
+    }
+
+    .hero .title {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .hero .subtitle {
+        width: 100%;
+    }
+
+    .top-symbol {
+        top: -43px;
+        left: -64px;
+        height: 116px;
+    }
+
+    .hero img {
+        height: 300px;
+        margin: 5px;
+    }
+}
+
+@media  (max-width: 400px) {
+    .hero img {
+        height: 250px;
+        margin: 5px;
+    }
+
+    .top-symbol {
+        left: -70px;
+    }
+
+    .hero .title {
+        font-size: 30px;
+    }
+
+    .hero .subtitle {
+        font-size: 10px;
+    }
+
+    .button.is-long {
+        width: 200px;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+}
+
+
+
+
