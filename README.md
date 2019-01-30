@@ -8,3 +8,10 @@ git pull github master
 git add -A  
 git commit -m "changelog"  
 git push github master  
+
+# Python Virtual Environment
+
+py venv venv
+venc/scripts/activate
+pip install requirements
+pip freeze > requirements.txt
