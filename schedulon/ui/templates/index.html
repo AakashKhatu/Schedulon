@@ -8,13 +8,13 @@
 	<meta name="theme-color" content="#e5314e">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" media="screen" href="styles/fonts.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
-	<script type="text/javascript" src="script/main.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="{% static "styles/fonts.css" %}" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{% static "styles/styles.css" %}" />
+	<script type="text/javascript" src="{% static "script/main.js" %}"></script>
 </head>
 <body>
     <header>
-		<img class="top-symbol" src="img/top.png"/>
+		<img class="top-symbol" src="{% static "img/top.png" %}"/>
 		<aside class="sidenav mobile">
 			<div class="sidenav-backdrop" onclick="handleClick()"></div>
 			<div class="drawer">
@@ -29,7 +29,7 @@
 			</div>
 		</aside>
 		<div class="loader">
-			<img src="img/loader.svg" />
+			<img src="{% static "img/loader.svg" %}" />
 		</div>
 		<div class="container">
 			<nav>
@@ -56,7 +56,7 @@
 				<p class="subtitle">ScheduleOn is optimized for both Schools and Colleges, and provides you all features that you need to manage your time tables and schedules. </p>
 				<button class="button is-primary is-long">Try ScheduleOn for free.</button>
 			</div>
-			<img src="img/undraw_teaching_f1cm.svg" />
+			<img src="{% static "img/undraw_teaching_f1cm.svg" %}" />
 		</div>
 	</div>
     <!-- <img class="middle-symbol" src="img/middle.png"/>
