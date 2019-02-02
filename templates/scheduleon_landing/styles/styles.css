@@ -247,6 +247,26 @@ header .desktop li:hover {
     display: none;
 }
 
+.cards {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 600px;
+    height: 700px;
+    margin-right: 77px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 20px #00000018
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px #00000019
+}
+ 
 /* Responsive media queries */
 
 @media  (max-width: 1200px) {
