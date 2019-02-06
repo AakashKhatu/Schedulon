@@ -1,6 +1,7 @@
 /* #e5314e */
 @import url('https://fonts.googleapis.com/css?family=Sarabun:400,800');
 
+
 *, .button {
     font-family: 'Product Sans', sans-serif;
 }
@@ -246,6 +247,70 @@ header .desktop li:hover {
     display: none;
 }
 
+.cards {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 20px #00000018
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px #00000019
+}
+
+.card-img {
+    margin: 0 auto;
+    margin-top: 36px;
+    width: 370px;
+    height: 307px;
+}
+
+.card-content {
+    margin: 0 53px;
+}
+
+.card-title {
+    width: 490px;
+    height: 140px;
+    font-size: 46px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card-learn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.card-learn:hover {
+    cursor: pointer;
+}
+
+.card-learn p {
+    font-size: 20px;
+    font-weight: 800;
+    color: #e5314e;
+}
+
+.card-arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+ 
 /* Responsive media queries */
 
 @media  (max-width: 1200px) {
